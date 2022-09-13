@@ -1,13 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link  href="/styles/output.css" rel="stylesheet"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles/output.css" rel="stylesheet" />
     <title>Tailwind Starter</title>
-</head>
-<body class="bg-gray-800">
-    
-</body>
+  </head>
+  <body>
+    <header class="container mx-auto py-[40px]">
+      <nav class="flex items-center">
+        <a class="inline-block mr-[345px]" href="#">
+          <img
+            src="./svgs/site-logo--header.svg"
+            width="130"
+            height="28"
+            alt="Site logo"
+            aria-label="Care'Mental site logo is written"
+          />
+        </a>
+        <ul class="grid grid-cols-4 grid-rows-1 gap-x-[40px] list-none m-0 p-0">
+            <li>
+                <a class="capitalize" href="#">Home</a>
+            </li>
+            <li>
+                <a class="capitalize" href="#">Service</a>
+            </li>
+            <li>
+                <a class="capitalize" href="#">About us</a>
+            </li>
+            <li>
+                <a class="capitalize" href="#">Testimonial</a>
+            </li>
+        </ul>
+        <div class="ml-auto">
+            <button class="capitalize">Sign in</button>
+            <button class="capitalize text-white py-[14px] px-[40px] rounded-[2px] bg-lightergray">Create account</button>
+        </div>
+      </nav>
+    </header>
+  </body>
 </html>
