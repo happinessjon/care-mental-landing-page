@@ -8,36 +8,222 @@
     <title>Tailwind Starter</title>
   </head>
   <body>
-    <header class="container mx-auto py-[40px]">
-      <nav class="flex items-center">
-        <a class="inline-block mr-[345px]" href="#">
-          <img
-            src="./svgs/site-logo--header.svg"
-            width="130"
-            height="28"
-            alt="Site logo"
-            aria-label="Care'Mental site logo is written"
-          />
-        </a>
-        <ul class="grid grid-cols-4 grid-rows-1 gap-x-[40px] list-none m-0 p-0">
-            <li>
-                <a class="capitalize" href="#">Home</a>
-            </li>
-            <li>
-                <a class="capitalize" href="#">Service</a>
-            </li>
-            <li>
-                <a class="capitalize" href="#">About us</a>
-            </li>
-            <li>
-                <a class="capitalize" href="#">Testimonial</a>
-            </li>
-        </ul>
-        <div class="ml-auto">
-            <button class="capitalize">Sign in</button>
-            <button class="capitalize text-white py-[14px] px-[40px] rounded-[2px] bg-lightergray">Create account</button>
+    <header class="w-full py-[40px] bg-white shadow">
+      <nav
+        class="container px-6 mx-auto laptop:flex laptop:items-center laptop:justify-between"
+      >
+        <!-- class="flex items-center container mx-auto" -->
+        <div class="flex justify-between items-center">
+          <a class="inline-block" href="#">
+            <img
+              src="./svgs/site-logo--header.svg"
+              width="130"
+              height="28"
+              alt="Site logo"
+              aria-label="Care'Mental site logo is written"
+            />
+          </a>
+          <button
+            class="block laptop:hidden"
+            type="button"
+            onclick="Menu(this)"
+          >
+            <svg
+              width="18"
+              height="12"
+              viewBox="0 0 18 12"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M18 12H0V10H18V12ZM18 7H0V5H18V7ZM18 2H9V0H18V2Z"
+                fill="#959494"
+              />
+            </svg>
+          </button>
         </div>
+        <ul
+          class="laptop:flex laptop:items-center z-[1] laptop:z-auto laptop:static absolute bg-white w-full left-0 laptop:w-auto laptop:py-0 py-0 laptop:pl-0 pl-7 laptop:opacity-100 opacity-0 top-[-400px] transition-all ease-in duration-500"
+        >
+          <!-- class="hidden laptop:grid grid-cols-4 grid-rows-1 gap-x-[40px] list-none m-0 p-0" -->
+          <li class="ml-[40px] my-6 lg:my-0">
+            <a class="capitalize text-darkergray" href="#">Home</a>
+          </li>
+          <li class="ml-[40px] my-6 lg:my-0">
+            <a class="capitalize text-darkergray" href="#">Service</a>
+          </li>
+          <li class="ml-[40px] my-6 lg:my-0">
+            <a class="capitalize text-darkergray" href="#">About us</a>
+          </li>
+          <li class="ml-[40px] my-6 lg:my-0">
+            <a class="capitalize text-darkergray" href="#">Testimonial</a>
+          </li>
+          <div class="ml-[80px]">
+            <button class="capitalize mr-[40px] text-darkergray" type="button">
+              Sign in
+            </button>
+            <button
+              class="capitalize text-white py-[14px] px-[40px] font-medium rounded-[2px] bg-lightergray"
+              type="button"
+            >
+              Create account
+            </button>
+          </div>
+        </ul>
       </nav>
     </header>
+    <main>
+      <section
+        class="container mx-auto grid grid-cols-2 grid-rows-1 gap-x-[40px] pt-[49px] pb-[80px] mb-[80px]"
+      >
+        <div class="">
+          <img
+            class="bg-lightergray"
+            src="#"
+            alt="Added plaholder image from website of unsplash"
+            width="573"
+            height="476"
+          />
+          <!-- <img class="bg-lightergray" src="https://unsplash.it/573/476" alt="Added plaholder image from website of unsplash" width="573" height="476"> -->
+        </div>
+        <article class="pt-[82px]">
+          <h2 class="font-bold text-[40px] text-headingColor mb-2">
+            Take care of your
+            <strong class="font-bold text-lightergray">mental</strong> health by
+            treating with us
+          </h2>
+          <p class="text-400 text-darkergray mb-[40px]">
+            Join us and you will experience a very significant change in your
+            mentality. We make sure your mental health will be calm and peaceful
+            with our treatment
+          </p>
+          <button
+            class="capitalize text-white py-[14px] px-[40px] font-medium rounded-[2px] bg-lightergray"
+            type="button"
+          >
+            Get started
+          </button>
+        </article>
+      </section>
+      <section class="container mx-auto py-[80px] mb-[70px]">
+        <h2
+          class="flex font-bold text-[40px] leading-[50px] text-headingColor mb-[40px] max-w-[590px] w-full before:h-[100px] before:w-1 before:content before:bg-lightergray before:mr-4"
+        >
+          What do you get when you use our services?
+        </h2>
+        <ul
+          class="grid sm:grid-cols-1 grid-rows-3 laptop:grid-cols-2 grid-rows-2 gap-y-[40px] lg:grid-cols-3 grid-rows-1 gap-x-[40px]"
+        >
+          <li class="py-[56px] px-[48px] rounded-[16px] bg-scarlet">
+            <p
+              class="flex mb-[23px] before:content before:h-[74px] before:w-2 before:bg-lightergray before:mr-4"
+            >
+              <span class="flex flex-col text-2xl text-lightergray">
+                <strong class="fond-black text-[32px] mb-[5px]">500+</strong>
+                Employee
+              </span>
+            </p>
+            <p class="leading-[28px] text-darkergray">
+              We have highly skilled employees in this field, and are
+              experienced in cleaning your favorite shoes
+            </p>
+          </li>
+
+          <li class="py-[56px] px-[48px] rounded-[16px] bg-scarlet">
+            <p
+              class="flex mb-[23px] before:content before:h-[74px] before:w-2 before:bg-lightergray before:mr-4"
+            >
+              <span class="flex flex-col text-2xl text-lightergray">
+                <strong class="fond-black text-[32px] mb-[5px]">12+</strong>
+                Treatment
+              </span>
+            </p>
+            <p class="leading-[28px] text-darkergray">
+              We already have more than 65 branches spread throughout Indonesia,
+              so you will be very easy to find us
+            </p>
+          </li>
+
+          <li class="py-[56px] px-[48px] rounded-[16px] bg-scarlet">
+            <p
+              class="flex mb-[23px] before:content before:h-[74px] before:w-2 before:bg-lightergray before:mr-4"
+            >
+              <span class="flex flex-col text-2xl text-lightergray">
+                <strong class="fond-black text-[32px] mb-[5px]">6000+</strong>
+                Happy customers
+              </span>
+            </p>
+            <p class="leading-[28px] text-darkergray">
+              We make sure you will be happy with our services, your shoes will
+              be very clean, fragrant and will be durable with the treatment we
+              do
+            </p>
+          </li>
+        </ul>
+      </section>
+      <section class="container mx-auto py-[80px] bg-scarlet mb-[80px]">
+        <h2
+          class="flex font-bold text-[40px] leading-[50px] text-headingColor mb-[40px] max-w-[740px] w-full before:h-[100px] before:w-1 before:content before:bg-lightergray before:mr-4"
+        >
+          Some of our ways to heal your mental disorders
+        </h2>
+        <ul class="list-none p-0 m-0">
+          <li class="flex items-center">
+            <img
+              class="bg-lightergray mr-[80px]"
+              src="#"
+              alt="Added plaholder image from website of unsplash"
+              width="600"
+              height="600"
+            />
+            <!-- <img class="bg-lightergray" src="https://unsplash.it/573/476" alt="Added plaholder image from website of unsplash" width="573" height="476"> -->
+
+            <article class="pt-[133px] pb-[124px] w-full max-w-[520px]">
+              <h2 class="font-bold text-[40px] text-lightergray mb-2">
+                Meditation
+              </h2>
+              <p class="text-400 text-darkergray leading-[32px] mb-[40px]">
+                Meditation is a form of relaxation technique that is done by
+                practicing concentration and focus of the mind to get a feeling
+                of calm and peace. This activity can be done in an easy way and
+                in a relatively short time
+              </p>
+              <p class="text-400 text-darkergray leading-[32px]">
+                The benefits of meditation are not only limited to physical
+                health, but also mental health. In addition to relieving stress
+                and making you more relaxed, there are various other benefits of
+                meditation that can be obtained, if you do it regularly.
+              </p>
+            </article>
+          </li>
+          <li class="flex items-center">
+            <img
+              class="bg-lightergray ml-[80px] order-2"
+              src="#"
+              alt="Added plaholder image from website of unsplash"
+              width="600"
+              height="600"
+            />
+            <!-- <img class="bg-lightergray" src="https://unsplash.it/573/476" alt="Added plaholder image from website of unsplash" width="573" height="476"> -->
+
+            <article class="pt-[133px] pb-[124px] w-full max-w-[520px] order-1">
+              <h2 class="font-bold text-[40px] text-lightergray mb-2">
+                Positive Thinking
+              </h2>
+              <p class="text-400 text-darkergray leading-[32px] mb-[40px]">
+                The benefits of positive thinking for health do not just make
+                you calm. It can also keep you from various dangerous diseases
+              </p>
+              <p class="text-400 text-darkergray leading-[32px]">
+                Negative thoughts are one of the factors that can trigger
+                excessive anxiety. On the other hand, well-managed positive
+                thoughts can help you both avoid and get rid of the condition.
+              </p>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
   </body>
 </html>
