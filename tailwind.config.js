@@ -16,6 +16,8 @@ module.exports = {
       "lightergray": "#959494",
       "white": "#ffffff",
       "darkergray": "#454545",
+      "mediumgray": "#a4a4a4",
+      "playergray": "#e5e5e5",
       "headingColor": "#333232",
       "scarlet": "rgba(255, 121, 79, 0.05)",
       "footerColor": "#AFAFAF",
