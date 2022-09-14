@@ -9,8 +9,7 @@ module.exports = {
       mobile: "460px",
       tablet: "768px",
       laptop: "1024px",
-      desktop: "1260px",
-      "desktop-xl": "1920px",
+      desktop: "1250px",
     },
     colors: {
       "lightergray": "#959494",
